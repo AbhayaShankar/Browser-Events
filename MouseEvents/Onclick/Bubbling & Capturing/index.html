@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubbling and Capturing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <br />
+
+    <!-- Showing bubbling events. and how they are called-->
+    <form onclick="alert('Form')" id="form" action="">
+      FORM
+      <div onclick="alert('div')">
+        DIV
+        <p onclick="alert('p')">P</p>
+        <!--first P evant is handled then upon its  parent i.e. div and then form 
+        this is known as Bubbling.
+        Hence we see three alert opening when we click on P first.
+        If we click on div then div and form event handlers will be called -->
+      </div>
+    </form>
+
+    <!--Showing what event.target and this.target calls.-->
+    <form id="form" action="">
+      FORM
+      <div>
+        DIV
+        <p>P</p>
+        <!--Event.target will call the event which is currently clicked or handled.
+        but the this.target will call the event on which the call or function is called.
+    
+        SO if we click on p, e.target returns P but this. returns FORM.-->
+      </div>
+    </form>
+  </body>
+</html>
