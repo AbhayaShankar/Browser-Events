@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse over</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!--  1st-- changing images when onmouseover and onmouseout-->
+    <img
+      id="img"
+      onmouseover="setImage()"
+      onmouseout="removeImage()"
+      src="Images/sun-rise.jpg"
+      alt=""
+    />
+
+    <!--2nd -- logging value in depth when mouseover and mouseout 
+      in each div of the container and keeping log 
+      of each over and out values
+    -->
+
+    <div id="container">
+      <div class="smiley-green">
+        <div class="left-eye"></div>
+        <div class="right-eye"></div>
+        <div class="smile"></div>
+      </div>
+
+      <div class="smiley-yellow">
+        <div class="left-eye"></div>
+        <div class="right-eye"></div>
+        <div class="smile"></div>
+      </div>
+
+      <div class="smiley-red">
+        <div class="left-eye"></div>
+        <div class="right-eye"></div>
+        <div class="smile"></div>
+      </div>
+    </div>
+
+    <textarea id="log">
+Events will show up here!
+  </textarea
+    >
+  </body>
+</html>

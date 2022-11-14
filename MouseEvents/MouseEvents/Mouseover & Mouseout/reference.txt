@@ -1,0 +1,3 @@
+https://javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave
+
+javascript.info - SOURCE FOR UNDERSTANDING THIS CONCEPT
