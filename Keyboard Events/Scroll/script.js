@@ -8,3 +8,14 @@ window.addEventListener("scroll", () => {
   }
   console.log(scrolled);
 });
+
+function scrollWin1() {
+  scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function scrollWin2() {
+  scrollTo({ top: 1000, behavior: "smooth" });
+}
+
+document.getElementById("btn1").addEventListener("click", scrollWin2);
+document.getElementById("btn2").addEventListener("click", scrollWin1);
